@@ -1,12 +1,12 @@
 let sum = new Function('a', 'b', 'return a + b');
-alert(sum(1, 2)); // 3
+console.log(sum(1, 2)); // 3
 
-let sayHi = new Function('alert("Hello")');
+let sayHi = new Function('console.log("Hello")');
 sayHi(); // Hello
 
 function getFunc() {
     let value = "test";
-    let func = new Function('alert(value)');
+    let func = new Function('console.log(value)');
     return func;
 }
 
